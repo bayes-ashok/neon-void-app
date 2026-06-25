@@ -27,7 +27,6 @@ export default function LandingScreen({ onStart }) {
 
   return (
     <div className={styles.landing}>
-      <p className={styles.subtitle}>Enter the</p>
       <h1 className={styles.title}>NEON VOID</h1>
       <button
         className={styles.startButton}
