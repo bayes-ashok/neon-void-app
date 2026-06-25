@@ -23,9 +23,16 @@
   -webkit-background-clip: text;
   background-clip: text;
   animation: shimmer 4s linear infinite, flicker 3s ease-in-out infinite;
-  color: #ffffff;
-text-shadow: 0 0 15px rgba(255,255,255,0.7),
-             0 0 30px rgba(255,255,255,0.4);
+  background: linear-gradient(90deg, #ff3c00, #ffae00, #ff3c00);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  text-shadow:
+    0 0 12px rgba(255, 60, 0, 0.7),
+    0 0 24px rgba(255, 174, 0, 0.5),
+    0 0 40px rgba(255, 120, 0, 0.35);
 }
 
 .startButton {
@@ -60,8 +67,8 @@ text-shadow: 0 0 15px rgba(255,255,255,0.7),
   text-transform: uppercase;
   margin: -0.75rem 0 0;
   text-align: center;
-max-width: min(60rem, 95vw);  
-line-height: 1;
+  max-width: min(60rem, 95vw);
+  line-height: 1;
   font-weight: 800;
   text-shadow: 0 0 18px rgba(255, 0, 229, 0.45), 0 0 30px rgba(0, 240, 255, 0.2);
   background: linear-gradient(90deg, #ff00e5, #00f0ff, #ff00e5);
@@ -73,26 +80,59 @@ line-height: 1;
 }
 
 @keyframes shimmer {
-  0% { background-position: 0% center; }
-  100% { background-position: 200% center; }
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
 }
 
 @keyframes flicker {
-  0%, 100% { opacity: 1; }
-  92% { opacity: 1; }
-  93% { opacity: 0.7; }
-  94% { opacity: 1; }
-  96% { opacity: 0.85; }
-  97% { opacity: 1; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  92% {
+    opacity: 1;
+  }
+
+  93% {
+    opacity: 0.7;
+  }
+
+  94% {
+    opacity: 1;
+  }
+
+  96% {
+    opacity: 0.85;
+  }
+
+  97% {
+    opacity: 1;
+  }
 }
 
 @keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 25px rgba(0, 240, 255, 0.35), inset 0 0 15px rgba(0, 240, 255, 0.15); }
-  50% { box-shadow: 0 0 45px rgba(0, 240, 255, 0.6), inset 0 0 25px rgba(0, 240, 255, 0.25); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.35), inset 0 0 15px rgba(0, 240, 255, 0.15);
+  }
+
+  50% {
+    box-shadow: 0 0 45px rgba(0, 240, 255, 0.6), inset 0 0 25px rgba(0, 240, 255, 0.25);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .title, .startButton {
+
+  .title,
+  .startButton {
     animation: none;
   }
 }

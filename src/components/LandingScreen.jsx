@@ -27,7 +27,7 @@ export default function LandingScreen({ onStart }) {
 
   return (
     <div className={styles.landing}>
-      <h1 className={styles.title}>NEON VOID</h1>
+      <h1 className={styles.title}>Immersive Disco</h1>
       <p className={styles.volumeHint}>
         Turn on the volume to full for better experience before getting started
       </p>
