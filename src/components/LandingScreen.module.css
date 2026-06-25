@@ -14,7 +14,7 @@
 .title {
   font-family: 'Orbitron', sans-serif;
   font-weight: 900;
-  font-size: clamp(2.5rem, 12vw, 5.5rem);
+  font-size: clamp(1.5rem, 8vw, 3.5rem);
   letter-spacing: 0.15em;
   margin: 0;
   text-align: center;
@@ -22,9 +22,10 @@
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
   animation: shimmer 4s linear infinite, flicker 3s ease-in-out infinite;
-  text-shadow: 0 0 40px rgba(255, 0, 229, 0.35);
+  color: #ffffff;
+text-shadow: 0 0 15px rgba(255,255,255,0.7),
+             0 0 30px rgba(255,255,255,0.4);
 }
 
 .startButton {
@@ -53,14 +54,14 @@
 
 .volumeHint {
   font-family: 'Orbitron', sans-serif;
-  font-size: clamp(1rem, 2.4vw, 1.35rem);
+  font-size: clamp(2rem, 2.4vw, 2.5rem);
   letter-spacing: 0.18em;
   color: #ffffff;
   text-transform: uppercase;
   margin: -0.75rem 0 0;
   text-align: center;
-  max-width: min(36rem, 90vw);
-  line-height: 1.7;
+max-width: min(60rem, 95vw);  
+line-height: 1;
   font-weight: 800;
   text-shadow: 0 0 18px rgba(255, 0, 229, 0.45), 0 0 30px rgba(0, 240, 255, 0.2);
   background: linear-gradient(90deg, #ff00e5, #00f0ff, #ff00e5);

@@ -40,6 +40,8 @@ export default function LandingScreen({ onStart }) {
       >
         Get Started
       </button>
+            
+
     </div>
   );
 }
