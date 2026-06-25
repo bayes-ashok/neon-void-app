@@ -37,7 +37,7 @@ export default function LandingScreen({ onStart }) {
       >
         Get Started
       </button>
-      <p className={styles.hint}>Sound on · Fullscreen · Flashing lights</p>
+      <p className={styles.volumeHint}>Turn on the volume to full for better experience before getting started</p>
     </div>
   )
 }

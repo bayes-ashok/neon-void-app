@@ -28,12 +28,13 @@
    appears. There is no pause/mute counterpart by design. */
 .unmuteButton {
   position: fixed;
-  bottom: max(2rem, env(safe-area-inset-bottom));
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   z-index: 50;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.6rem;
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
@@ -53,7 +54,7 @@
 }
 
 .unmuteButton:active {
-  transform: translateX(-50%) scale(0.95);
+  transform: translate(-50%, -50%) scale(0.95);
 }
 
 .unmuteIcon {
@@ -64,11 +65,11 @@
 @keyframes urgentPulse {
   0%, 100% {
     box-shadow: 0 0 20px rgba(255, 0, 229, 0.45);
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
   50% {
     box-shadow: 0 0 40px rgba(255, 0, 229, 0.85);
-    transform: translateX(-50%) scale(1.04);
+    transform: translate(-50%, -50%) scale(1.04);
   }
 }
 
