@@ -1,5 +1,5 @@
-import { useRef } from 'react'
-import styles from './LandingScreen.module.css'
+import { useRef } from "react";
+import styles from "./LandingScreen.module.css";
 
 /**
  * GET STARTED button.
@@ -17,17 +17,21 @@ import styles from './LandingScreen.module.css'
  * (e.g. touchstart AND the click that follows it).
  */
 export default function LandingScreen({ onStart }) {
-  const firedRef = useRef(false)
+  const firedRef = useRef(false);
 
   const handleStart = () => {
-    if (firedRef.current) return
-    firedRef.current = true
-    onStart()
-  }
+    if (firedRef.current) return;
+    firedRef.current = true;
+    onStart();
+  };
 
   return (
     <div className={styles.landing}>
       <h1 className={styles.title}>NEON VOID</h1>
+      <p className={styles.volumeHint}>
+        Turn on the volume to full for better experience before getting started
+      </p>
+
       <button
         className={styles.startButton}
         onPointerDown={handleStart}
@@ -36,7 +40,6 @@ export default function LandingScreen({ onStart }) {
       >
         Get Started
       </button>
-      <p className={styles.volumeHint}>Turn on the volume to full for better experience before getting started</p>
     </div>
-  )
+  );
 }

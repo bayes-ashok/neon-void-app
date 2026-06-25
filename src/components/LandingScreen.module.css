@@ -53,16 +53,22 @@
 
 .volumeHint {
   font-family: 'Orbitron', sans-serif;
-  font-size: clamp(0.8rem, 1.8vw, 1rem);
-  letter-spacing: 0.16em;
-  color: #ffecff;
+  font-size: clamp(1rem, 2.4vw, 1.35rem);
+  letter-spacing: 0.18em;
+  color: #ffffff;
   text-transform: uppercase;
-  margin-top: -1rem;
+  margin: -0.75rem 0 0;
   text-align: center;
-  max-width: min(32rem, 88vw);
-  line-height: 1.8;
-  font-weight: 700;
-  text-shadow: 0 0 16px rgba(255, 0, 229, 0.35);
+  max-width: min(36rem, 90vw);
+  line-height: 1.7;
+  font-weight: 800;
+  text-shadow: 0 0 18px rgba(255, 0, 229, 0.45), 0 0 30px rgba(0, 240, 255, 0.2);
+  background: linear-gradient(90deg, #ff00e5, #00f0ff, #ff00e5);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 4s linear infinite;
 }
 
 @keyframes shimmer {
