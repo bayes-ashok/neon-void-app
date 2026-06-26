@@ -40,6 +40,17 @@ export default function LandingScreen({ onStart }) {
       >
         Get Started
       </button>
+      {/* Developed by credit */}
+      <p className={styles.credit}>
+        Developed by{' '}
+        <a 
+          href="https://www.ashok-shah.com.np/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          Ashok Shah
+        </a>
+      </p>
             
 
     </div>
